@@ -1,0 +1,265 @@
+/* 
+ * Remote OK - login page
+ * Visal Sang 
+ * Date: 24/02/2026
+ */
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/bg-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: system-ui, sans-serif, "Nunito", "Helvetica", Arial, sans-serif;
+    font-weight: 800;
+}
+
+/* nav bar */
+.nav-bar{
+    padding: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;          
+    justify-content: flex-end; 
+    gap: 12px;              
+}
+
+/* btn */
+.btn{
+    text-decoration: none;
+    color: #fff;
+    padding: 8px;
+    border-radius: 12px;    
+    font-weight: 800;
+    font-size: 16px;
+    background-color: #0072b1;
+    border: 2px solid transparent;
+}
+.btn:hover{
+    color:#0072b1;
+    border-color: #0072b1;
+}
+.btn_post{
+    display: inline-block;
+}
+.btn_post:hover{
+    background: transparent;
+    border-color: #0072b1;
+}
+.btn_health{
+    background-color: #5a55d6;
+    border: 2px solid #5a55d6;
+    display: inline-block;
+}
+.btn_health:hover{
+    color: #5bc6c6;
+    border: 2px solid #5bc6c6;
+    background-color: transparent;
+}
+.btn_login{
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    display: inline-block;
+}
+.btn_login:hover{
+    background-color: #000;
+    color: rgb(251, 250, 248);
+    border-color: #fff;
+}
+
+/* logo and dropdown */
+.logo-remote{
+    border: none;
+    background: none;
+    padding: 0;
+    position: relative;
+}
+.logo-ok{
+    border-radius: 100%;
+    cursor: zoom-in;
+    box-shadow: 0 0 0 1px #dddddd;
+}
+.chevron-down{
+    margin-bottom: 10px;
+    filter: invert(1);
+}
+.logo-dropdown li{
+    padding: 5px 14px;
+    width: 50%;
+}
+.logo-dropdown a{
+    color: #0f1115;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: system-ui, sans-serif, "Nunito", "Helvetica", Arial, sans-serif;
+    padding: 5px 14px;
+    width: 50%;
+    font-weight: 400;
+}
+.logo-dropdown{
+    position: absolute;
+    text-align: left;
+    background-color: #FBFAF8F2;
+    max-width: 500px;
+    width: 100%;
+    z-index: 1;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 0 1px #ddd;
+    padding: 7px;
+    top: 48px;
+    box-shadow: 0 0 0 1px #ddd;
+    border-radius: 12px;
+    display: none;
+    overflow-y: scroll;
+    max-height: calc(100vh - 120px);
+}
+.logo-dropdown-group{
+    font-family: system-ui, sans-serif, "Nunito", "Helvetica", Arial, sans-serif;
+    font-size: 10px;
+    color: #0f1115;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 0 7px;
+    position: absolute;
+    top: -7px;
+}
+.logo-dropdown-group-line{
+    height: 1px;
+    background-color: #ededed;
+    margin: 7px;
+    margin-top: 21px;
+    position: relative;
+}
+.group{
+    display: flex;
+}
+.logo-dropdown a:hover{
+    color: #fff;
+    background-color: #0072b1;
+    border-radius: 12px;
+}
+.logo-remote:focus-within .logo-dropdown{
+    display: block;
+}
+
+/* login form */
+.form-login{
+    background-color: #fff;
+    border-radius: 12px;
+    max-width: 450px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    padding: 28px;
+
+    h2{
+        font-weight: 800;
+        color: #0f1115;
+        margin-bottom: 27px;
+    }
+    a{
+        color: #0f1115;
+    }
+}
+.form-input{
+    width: 100%;
+    display: block;
+    padding: 7px;
+    border: none;
+    background: #FBFAF8F2;
+    box-shadow: 0 0 0 1px #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.form-input::placeholder{
+    color: #0f1115;
+}
+.form-login-btn{
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+
+.line{
+    height: 1px;
+    background-color: #ddd;
+    display: inline-block;
+    width: calc(43%);
+}
+.or{
+    display: inline;
+    width: 10%;
+    font-size: 12px;
+    color: #dddddd;
+    font-weight: 400;
+    vertical-align: middle;
+}
+.line-wrap{
+    margin-bottom: 10px;
+}
+.google-btn{
+    color: #0f1115;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    display: flex;
+    gap: 5px;
+    border: 1px solid #ddd;
+    padding: 9px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .03);
+    margin-bottom: 14px;
+    img{
+        width: 22px;
+    }
+    
+}
+.google-btn-text{
+    font-weight: bold;
+}
+.sign-up{
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+.not-member{
+    font-size: 16px;
+    font-weight: 400;
+}
+.form-login-btn:hover{
+    color: #0072b1;
+    background-color: #fff;
+}
+.google-btn:hover{
+    color: #fff;
+    background-color: #0f1115;
+}
+.logo-remote:focus .logo-ok{
+    box-shadow: 0 0 0 4px rgba(255, 71, 66, .3);
+}
+.terms-of-service{
+    font-weight: 400;
+    font-size: 11px;
+    margin-top: 14px;
+}
+
+/* media 600px */
+@media(max-width: 600px){
+    .form-login{
+        border-radius: 0;
+    }
+}

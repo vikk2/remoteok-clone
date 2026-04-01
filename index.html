@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RemoteOK clone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&family=Gravitas+One&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Momo+Trust+Display&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- nav -->
+    <div class="nav-bar">
+        <ul class="nav-menu">
+            <li><a href="#" class="btn btn_health">Health insurance</a></li>
+            <li><a href="pages/post_job.html" class="btn btn_post">Post a job →</a></li>
+            <li><a href="pages/login.html" class="btn btn_login">Log in</a></li>
+        </ul>
+    </div>
+    <!-- //nav -->
+
+    <div class="main">
+        <!-- notification -->
+        <div class="note_box" id="note-box">
+            <a href="pages/post_job.html" class="note_box_link">
+                <div class="note_text">
+                    👉 Hiring remotely? Reach 
+                    <span class="note-text-span">
+                        2,500,000+ remote workers</span>
+                    on the 🏆 #1 Remote Job Platform
+                </div>
+            </a>
+
+            <div>
+                <a href="pages/post_job.html" class="btn btn_post1">Post a remote job →</a>
+                <span class="btn btn_hide" id="hide">Hide this</span>
+            </div>
+        </div>
+        <!-- //notification -->
+
+        <!-- filter -->
+        <div class="filter-bar">
+            <div class="filter-row">
+                <button class="logo-remote" id="logo-click-to-dropmenu">
+                    <img src="images/logo.webp" alt="logo" width="40" class="logo-ok">
+                    <img src="images/chevron-down.svg" alt="chevron-down" width="15" class="chevron-down">
+                </button>
+                <div class="logo-dropdown" id="drop-menu">
+
+                    <div class="group">
+                        <a href="pages/login.html">👩‍💻 Join Remote OK</a>
+                        <a href="pages/login.html">👋 Log in</a>
+                    </div>
+                    <div class="logo-dropdown-group-line">
+                        <div class="logo-dropdown-group">General</div>
+                    </div>
+                    <div class="group">
+                        <a href="index.html">
+                            <img src="images/logo.webp" width="13" alt="remoteok-logo" class="group-logo">
+                            Frontpage
+                        </a>
+                        <a href="index.html">🏝 Remote jobs</a>
+                    </div>
+                    <div class="group">
+                        <a href="#">🌗 Dark mode</a>
+                        <a href="#">👩‍💻 Hire remote workers</a>
+                    </div>
+                    <div class="group">
+                        <a href="#">🚨 Post a job</a>
+                        <a href="#">⭐️ Go premium</a>
+                    </div>
+                    <div class="logo-dropdown-group-line">
+                        <div class="logo-dropdown-group">Top jobs</div>
+                    </div>
+                    <div class="group">
+                        <a href="#">🦾 AI Jobs</a>
+                        <a href="#">⏰ Async Jobs</a>
+                    </div>
+                    <div class="group">
+                        <a href="#">🌎 Distributed team</a>
+                        <a href="#">🎧 Support jobs</a>
+                    </div>
+                    <div class="group">
+                        <a href="#">🤓 Engineer jobs</a>
+                        <a href="#">🤓 Software jobs</a>
+                    </div>
+                    <div class="group">
+                        <a href="#">👵 Senior jobs</a>
+                        <a href="#">🛠 Technical jobs</a>
+                    </div>
+                    <div class="group">
+                        <a href="#">💼 Management jobs</a>
+                        <a href="#">🚀 Growth jobs</a>
+                    </div>
+                    <div class="group">
+                        <a href="#">👩‍✈️ Lead jobs</a>
+                    </div>
+                    <div class="logo-dropdown-group-line">
+                        <div class="logo-dropdown-group">Companies</div>
+                    </div>
+                    <div class="group">
+                        <a href="#">🚨 Post a remote job</a>
+                        <a href="#">📦 Buy a job bundle</a>
+                    </div>
+                    <div class="group">
+                        <a href="#">🏷 Ask for a discount</a>
+                        <a href="#">
+                            <img src="images/logo-biz-0.png" width="17" alt="health-logo" class="hacker-news invert-logo">
+                            Health insurance for teams
+                        </a>
+                    </div>
+                    <div class="group">
+                        <a href="#">
+                            <img src="images/logo-biz-0.png" width="17" alt="health-logo" class="hacker-news invert-logo">
+                            Health insurance for nomads
+                        </a>
+                    </div>
+                    <div class="logo-dropdown-group-line">
+                        <div class="logo-dropdown-group">Feeds</div>
+                    </div>
+                    <div class="group">
+                        <a href="#">🛠 Remote Jobs API</a>
+                        <a href="#">🪚 RSS feed</a>
+                    </div>
+                    <div class="group">
+                        <a href="#">🪓 JSON feed</a>
+                        <a href="#">
+                            <img src="images/y18.svg" width="17" alt="y18-logo" class="group-logo hacker-news">
+                            Hacker News mode
+                        </a>
+                    </div>
+                    <div class="group">
+                        <a href="#">
+                            <img src="images/vscode.webp" width="17" alt="vscode-logo" class="hacker-news">
+                            Hacker News mode
+                        </a>
+                    </div>
+                    <div class="logo-dropdown-group-line">
+                        <div class="logo-dropdown-group">Help</div>
+                    </div>
+                    <div class="group">
+                        <a href="#">💡 Ideas + bugs</a>
+                        <a href="#">🚀 Changelog</a>
+                    </div>
+                    <div class="group">
+                        <a href="#">🛍️ Merch</a>
+                        <a href="#">🛟 FAQ & Help</a>
+                    </div>
+                    <div class="logo-dropdown-group-line">
+                        <div class="logo-dropdown-group">Other projects</div>
+                    </div>
+                    <div class="group">
+                        <a href="#">📊 Remote work stats</a>
+                        <a href="#">👷 Top remote companies</a>
+                    </div>
+                    <div class="group">
+                        <a href="#">💰 Highest paying remote jobs</a>
+                        <a href="#">🧪 State of remote work</a>
+                    </div>
+                    <div class="group">
+                        <a href="#">🌍 Become a digital nomad</a>
+                        <a href="#">🔮 Web3 Jobs</a>
+                    </div>
+                    <div class="group">
+                        <a href="#">📸 Photo AI</a>
+                        <a href="#">🏡 Interior AI</a>
+                    </div>
+                </div>
+
+
+                <div class="search-big-box">
+                    <input type="text" placeholder="🔍 Search" class="search-box">
+                    <img src="images/chevron-down.svg" alt="chevron-down" width="15" class="chevron-down1">
+                    <ul class="search-menu">
+                        <li><a href="#">🎧 Support</a></li>
+                        <li><a href="#">🤓 Engineer</a></li>
+                        <li><a href="#">🤓 Software</a></li>
+                        <li><a href="#">👵 Senior</a></li>
+                        <li><a href="#">🛠 Technical</a></li>
+                        <li><a href="#">💼 Management</a></li>
+                        <li><a href="#">🚀 Growth</a></li>
+                        <li><a href="#">👩‍✈️ Lead</a></li>
+                        <li><a href="#">🎨 Design</a></li>
+                        <li><a href="#">💼 Manager</a></li>
+                        <li><a href="#">💼 Sales</a></li>
+                        <li><a href="#">💰 Financial</a></li>
+                        <li><a href="#">🚥 Marketing</a></li>
+                        <li><a href="#">🔑 Security</a></li>
+                        <li><a href="#">♾️ Operations</a></li>
+                        <li><a href="#">☁️ Cloud</a></li>
+                        <li><a href="#">♾️ System</a></li>
+                        <li><a href="#">♾️ Operational</a></li>
+                        <li><a href="#">💼 Strategy</a></li>
+                        <li><a href="#">💼 Leader</a></li>
+                        <li><a href="#">🤓 Code</a></li>
+                        <li><a href="#">🔌 Non Tech</a></li>
+                        <li><a href="#">👨‍🏫 Training</a></li>
+                        <li><a href="#">✍️ Content</a></li>
+                    </ul>
+                </div>
+
+                <div class="search-big-box2">
+                    <input type="text" placeholder="🌏 Location" class="search-box2">
+                    <img src="images/chevron-down.svg" alt="chevron-down" width="15" class="chevron-down1">
+                    <ul class="location-menu">
+                        <li class="group">Regions</li>
+                        <li><a href="#">🌏 Worldwide</a></li>
+                        <li><a href="#">⛰️ North America</a></li>
+                        <li><a href="#">💃 Latin America</a></li>
+                        <li class="group">🇪🇺 Europe</li>
+                        <li><a href="#">🦁 Africa</a></li>
+                        <li><a href="#">🕌 Middle East</a></li>
+                        <li><a href="#">⛩ Asia</a></li>
+                        <li><a href="#">🌊 Oceania</a></li>
+                        <li class="group">Countries</li>
+                        <li><a href="#">🇰🇭 Cambodia</a></li>
+                        <li><a href="#">🇺🇸 United States</a></li>
+                        <li><a href="#">🇨🇦 Canada</a></li>
+                        <li><a href="#">🇬🇧 United Kingdom</a></li>
+                    </ul>
+                </div>
+                
+                <div class="search-big-box2">
+                    <input type="text" placeholder="💵 Salary" class="search-box3">
+                    <img src="images/chevron-down.svg" alt="chevron-down" width="15" class="chevron-down1">
+                    <div class="salary">
+                        <div class="mini">Minimum</div>
+                        <div class="price">$0k/year</div>
+                        <input type="range" class="range-price">
+                    </div>
+                </div>
+
+                <div class="search-big-box2">
+                    <input type="text" placeholder="🎪 Benefits" class="search-box3">
+                    <img src="images/chevron-down.svg" alt="chevron-down" width="15" class="chevron-down1">
+                    <ul class="search-menu">
+                        <li><a href="#">💰 401(k)</a></li>
+                        <li><a href="#">🌎 Distributed team	</a></li>
+                        <li><a href="#">⏰ Async</a></li>
+                        <li><a href="#">🤓 Vision insurance</a></li>
+                        <li><a href="#">🦷 Dental insurance	</a></li>
+                        <li><a href="#">🚑 Medical insurance</a></li>
+                        <li><a href="#">🏖 Unlimited vacation</a></li>
+                        <li><a href="#">🏖 Paid time off</a></li>
+                        <li><a href="#">📆 4 day workweek</a></li>
+                        <li><a href="#">💰 401k matching</a></li>
+                        <li><a href="#">🏔 Company retreats</a></li>
+                        <li><a href="#">🏬 Coworking budget</a></li>
+                        <li><a href="#">📚 Learning budget</a></li>
+                        <li><a href="#">💪 Free gym membership</a></li>
+                        <li><a href="#">🧘 Mental wellness budget</a></li>
+                        <li><a href="#">🖥 Home office budget</a></li>
+                        <li><a href="#">🥧 Pay in crypto</a></li>
+                        <li><a href="#">🥸 Pseudonymous</a></li>
+                        <li><a href="#">💰 Profit sharing</a></li>
+                        <li><a href="#">💰 Equity compensation</a></li>
+                        <li><a href="#">⬜️ No whiteboard interview</a></li>
+                        <li><a href="#">👀 No monitoring system</a></li>
+                        <li><a href="#">🚫 No politics at work</a></li>
+                        <li><a href="#">🎅 We hire old (and young)</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="sort-box">
+                    <select name="sort_by" class="sort-select">
+                        <option selected value="default">🦴 Sort by</option>
+                        <option value="new">🆕 Latest jobs</option>
+                        <option value="high">💵 Highest paid</option>
+                        <option value="most">👀 Most viewed</option>
+                        <option value="most-applied">✅ Most applied</option>
+                        <option value="hot">🔥 Hottest</option>
+                        <option value="benefits">🎪 Most benefits</option>
+                    </select>
+                </div>
+            </div>
+            <div class="lower-row">
+                <div class="tag-box first-box">
+                    🎧 Support
+                    <span class="tag-box-tooltip">Suggested filter, tap to add</span>
+                </div>
+                <div class="tag-box">
+                    🤓 Engineer
+                    <span class="tag-box-tooltip engineer">Suggested filter, tap to add</span>
+                </div>
+                <div class="tag-box">
+                    🤓 Software
+                    <span class="tag-box-tooltip software">Suggested filter, tap to add</span>
+                </div>
+                <div class="tag-box">
+                    👵 Senior
+                    <span class="tag-box-tooltip senior">Suggested filter, tap to add</span>
+                </div>
+                <div class="tag-box">
+                    🛠 Technical
+                    <span class="tag-box-tooltip technical">Suggested filter, tap to add</span>
+                </div>
+                <div class="tag-box">
+                    💼 Management
+                    <span class="tag-box-tooltip manage">Suggested filter, tap to add</span>
+                </div>
+                <div class="tag-box">
+                    🚀 Growth
+                    <span class="tag-box-tooltip growth">Suggested filter, tap to add</span>
+                </div>
+                <div class="tag-box">
+                    👩‍✈️ Lead
+                    <span class="tag-box-tooltip lead">Suggested filter, tap to add</span>
+                </div>
+            </div>
+        </div>
+        <!-- //filter -->
+
+        <!-- ad row -->
+        <table class="job-row-0">
+            <tr>
+                <td class="logo">
+                    <img src="images/logo-biz-0.png" alt="logo-biz-0" width="56" style="background-color: #283C49;">
+                </td>
+                <td class="info">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>
+                                <a href="#" class="title">Nomad Insurance by SafeWing</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 400; color: #fff; padding: 0;" class="sub-title">Global health coverage for remote workers and nomads</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0;">
+                                <table>
+                                    <tr>
+                                        <td style="padding: 0;">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="label-col">
+                </td>
+                <td class="date date-ad">
+                    Ad
+                </td>
+                <td class="apply-col0">
+                    <div class="btn apply-btn-0">
+                        Sign up today
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <!-- //ad row -->
+
+        <!-- job-row -->
+        <table class="job-row job1">
+            <tr class="special-tr-1">
+                <td class="logo">
+                    <img src="images/logo-biz-1.webp" alt="logo-biz-1" width="56">
+                </td>
+                <td class="info">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>
+                                <a href="#" class="title">Junior Crypto Analyst & Trader</a>
+                                <span class="verify-badge">VERIFIED</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sub-title">ELEMENTAL TERRA</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0;">
+                                <table>
+                                    <tr>
+                                        <td style="padding: 0;">
+                                            <div class="label">
+                                                <span class="label-box">🌏 Worldwide</span>
+                                                <span class="label-box">💰 $50k - $70k</span>
+                                                <span class="label-box">⏰ Part time</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="label-col">
+                    <div class="label2">
+                        <span class="label-box2">
+                            Other
+                            <span class="label-box-tooltip">Add to filters</span>
+                        </span>
+                        <span class="label-box2">
+                            Crypto
+                            <span class="label-box-tooltip crypto">Add to filters</span>
+                        </span>
+                        <span class="label-box2">
+                            Finance
+                            <span class="label-box-tooltip finance">Add to filters</span>
+                        </span>
+                    </div>
+                </td>
+                <td class="date">
+                    <img src="images/paper-clip.svg" alt="clip"> 19d
+                </td>
+                <td class="apply-col">
+                    <div class="btn apply-btn">
+                        Apply
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <!-- //job-row -->
+
+        <table class="job-row job1">
+            <tr class="special-tr-1" id="tr-1">
+                <td class="logo" id="border-radius-logo">
+                    <div class="GP-logo">
+                        <p>GP</p>
+                    </div>
+                </td>
+                <td class="info">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>
+                                <a href="#" class="title">Senior Amazon Brand Manager</a>
+                                <span>🎈</span>
+                                <span class="verify-badge">VERIFIED</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sub-title">GNO Parnters <img src="images/new-gif.webp" alt="new-gif" width="30"></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0;">
+                                <table>
+                                    <tr>
+                                        <td style="padding: 0;">
+                                            <div class="label">
+                                                <span class="label-box">🌏 Worldwide</span>
+                                                <span class="label-box">💰 $220k - $300k</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="label-col">
+                    <div class="label2">
+                        <span class="label-box2">
+                            Marketing
+                            <span class="label-box-tooltip marketing">Add to filters</span>
+                        </span>
+                        <span class="label-box2">
+                            Sales
+                            <span class="label-box-tooltip sales">Add to filters</span>
+                        </span>
+                    </div>
+                </td>
+                <td class="date">
+                    7h
+                </td>
+                <td class="apply-col" id="border-radius-apply-col">
+                    <div class="btn apply-btn">
+                        Apply
+                    </div>
+                </td>
+            </tr>
+            <tr class="special-tr-2" id="tr-2">
+                <td colspan="5" style="padding: 0;">
+                    <div class="job-detail-whole">
+                        <div class="job-detail">
+                            <div class="detail-upper">
+                                <div class="detail-logo">
+                                    <h2 class="gno-h2">
+                                        GNO Partners
+                                    </h2>
+                                    <p><a href="#" class="gno-a">elementalterra.com</a></p>
+                                    <div class="btn-apply-now">
+                                        Apply now
+                                    </div>
+                                    <p>
+                                        Share this job:
+                                    </p>
+                                    <img src="images/qrcode.png" alt="qrcode" width="80" class="qrcode">
+                                    <input type="text" value="rok.co/ks">
+                                </div>
+                                <div class="detail-title">
+                                    <span>GNO Partners is hiring a</span>
+                                    <h1>Remote Senior Amazon Brand Manager</h1>
+                                </div>
+                                <div class="detail">
+                                    <p><strong><u>Senior Amazon Brand Manager - GNO Partners</u></strong></p>
+                                    <p>
+                                        GNO Partners was founded by Gal and Ouriel, who built and exited two successful Amazon brands. We help Amazon FBA sellers scale profitably using our proven system.
+                                    </p>
+                                    <p>
+                                        We are a Done With You consultancy, meaning we don't manage client accounts—we set the strategy, analyze their brand, and teach them how to execute using our resources.
+                                    </p>
+                                    <p class="p-strong"><strong><u>Why Join Us?</u></strong></p>
+                                    <ul>
+                                        <li>Fully remote Amazon consulting agency.</li>
+                                        <li>High-performance culture: hard work, speed, over-delivery, and trust.</li>
+                                        <li><strong>Competitive Compensation: Total OTE of $220,000-$300,000+.</strong>
+                                            <ul style="margin: 0;">
+                                                <li>Base Salary: $120,000</li>
+                                                <li>Performance-Based Earnings: Realistically getting an extra $180,000 per year based on performance, and more (no cap).</li>
+                                            </ul>
+                                        </li>
+                                        <li>Work with a team that <strong>lives and breathes Amazon</strong> while having fun doing it.</li>
+                                    </ul>
+
+                                    <p class="p-strong"><strong><u>Who We’re Looking For:</u></strong></p>
+                                    <p>We are seeking a Senior Amazon Brand Manager who deeply understands Amazon FBA, enjoys strategizing for brand growth, and can tackle complex challenges with <strong>precision and speed.</strong></p>
+                                    
+                                    <p class="p-strong"><strong><u>Key Skills & Experience:</u></strong></p>
+                                        <ul>
+                                            <li><strong>Organic Ranking Mastery: </strong>Product launches, ranking strategies, and algorithm insights.</li>
+                                            <li><strong>Amazon PPC Expertise:</strong> Strategy + execution, proven hands on experience managing minimum <strong>$50K+/mo budgets.</strong></li>
+                                            <li><strong>Brand Management:</strong> Experience managing Private Label brands generating a minimum of $10M in annual revenue</li>
+                                            <li><strong>Logistics & Backend:</strong> Strong grasp of <strong>COGs, fees, inventory, and profitability (P&L) optimization.</strong></li>
+                                            <li><strong>Amazon Catalog Troubleshooter:</strong> Proven expertise in diagnosing and resolving complex catalog issues.</li>
+                                        </ul>
+
+                                    <p class="p-strong"><strong><u>Responsibilities</u></strong></p>
+                                    <ul>
+                                        <li>Lead weekly strategy calls with clients, ensuring project progress.</li>
+                                        <li>Solve Amazon challenges and guide clients through key projects.</li>
+                                        <li>Track progress and provide clear next steps.</li>
+                                        <li>Offer daily support via Slack & Email.</li>
+                                        <li>Continuously improve our consulting systems.</li>
+                                        <li>Attend weekly training and team meetings.</li>
+                                    </ul>
+
+                                    <p class="p-strong"><strong><u>Qualifications:</u></strong></p>
+                                    <ul>
+                                        <li>Full-time, remote.</li>
+                                        <li><strong>3+ years Amazon FBA experience</strong>, managing brands <strong>$10M+ in revenue minimum.</strong></li>
+                                        <li><strong>PPC expertise:</strong> Managed <strong>$50k monthly ad budgets minimum.</strong></li>
+                                        <li><strong>Seller Central pro:</strong> Navigate and optimize quickly.</li>
+                                        <li>Strong project management & client communication skills.</li>
+                                        <li>Positive, proactive, and <strong>client-focused</strong> personality.</li>
+                                        <li><strong>Fluent in English.</strong></li>
+                                        <li>Ambitious and driven, with a relentless work ethic to maximize earning potential</li>
+                                    </ul>
+
+                                    <p>If you're an Amazon expert, you're driven, strategic, and thrive in high-growth environments, we want you on our team!</p>
+                                    <p style="font-style: italic;">*For referrals, email us at HR @ gnopartners.com and CC the candidate you’re introducing.</p>
+                                    <p>Please mention the word <strong>REDEEM</strong> when applying to show you read the job post completely (#RNDkuMTU2LjQxLjIyMg==). This is a feature to avoid fake spam applicants. Companies can search these words to find applicants that read this and instantly see they're human.</p>
+
+
+                                    <h2>
+                                        Salary and compensation
+                                    </h2>
+                                    <br>
+                                    <p>$220,000 — $300,000/year</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="apply-box">
+                            <div>
+                                <h2>How do you apply?</h2>
+                                <p><strong>Please submit yout application through Breezy HR:</strong> https://gno-partners.breezy.hr/p/154fdc8fa066-senior-amazon-brand-manager?state=published</p>
+                            </div>
+                            <div class="apply-box-btn">
+                                Apply for this job
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table class="job-row job2">
+            <tr>
+                <td class="logo">
+                    <img src="images/logo-biz-2.webp" alt="logo-biz-2" width="56">
+                </td>
+                <td class="info">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>
+                                <a href="#" class="title">STILL HIRING Virtual Assistant $1k Weekly Pay</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sub-title2">Lance Bridges Estimate and Quotation Company DBA Best Estimate Pro</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0;">
+                                <table>
+                                    <tr>
+                                        <td style="padding: 0;">
+                                            <div class="label">
+                                                <span class="label-box">us United States</span>
+                                                <span class="label-box">💰 $90k - $140k</span>
+                                                <span class="label-box">⏰ Part time</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="label-col">
+                    <div class="label2">
+                        <span class="label-box2-2">
+                            Sales
+                            <span class="label-box-tooltip sales1">Add to filters</span>
+                        </span>
+                        <span class="label-box2-2">
+                            Marketing
+                            <span class="label-box-tooltip marketing2">Add to filters</span>
+                        </span>
+                        <span class="label-box2-2">
+                            Admin
+                            <span class="label-box-tooltip admin">Add to filters</span>
+                        </span>
+                    </div>
+                </td>
+                <td class="date2">
+                    <img src="images/paper-clip.svg" alt="clip"> 27d
+                </td>
+                <td class="apply-col">
+                    <div class="apply-btn-1">
+                        Apply
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table class="job-row job2">
+            <tr>
+                <td class="logo">
+                    <img src="images/logo-biz-3.webp" alt="logo-biz-3" width="56">
+                </td>
+                <td class="info">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>
+                                <a href="#" class="title">Senior Marketing Manager Paid Ads</a>
+                                <span>🎈</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sub-title2">Acebet.com</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0;">
+                                <table>
+                                    <tr>
+                                        <td style="padding: 0;">
+                                            <div class="label">
+                                                <span class="label-box">🌏 Worldwide</span>
+                                                <span class="label-box">💰 $200k - $500k</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="label-col">
+                    <div class="label2">
+                        <span class="label-box2-2">Marketing</span>
+                    </div>
+                </td>
+                <td class="date2">
+                    <img src="images/paper-clip.svg" alt="clip"> 4d
+                </td>
+                <td class="apply-col">
+                    <div class="apply-btn-1">
+                        Apply
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table class="job-row job2">
+            <tr>
+                <td class="logo">
+                    <img src="images/logo-biz-4.webp" alt="logo-biz-4" width="56">
+                </td>
+                <td class="info">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>
+                                <a href="#" class="title">Software Engineer C </a>
+                                <span>🎈</span>
+                                <span class="verify-badge">VERIFIED</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sub-title2">Octo Horizon <img src="images/new-gif.webp" alt="new-gif" width="30"></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0;">
+                                <table>
+                                    <tr>
+                                        <td style="padding: 0;">
+                                            <div class="label">
+                                                <span class="label-box">🌏 Worldwide</span>
+                                                <span class="label-box">💰 $120k - $180k</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="label-col">
+                    <div class="label2">
+                        <span class="label-box2-2">Engineer</span>
+                        <span class="label-box2-2">Technical</span>
+                        <span class="label-box2-2">Cloud</span>
+                    </div>
+                </td>
+                <td class="date2">
+                    <img src="images/paper-clip.svg" alt="clip"> 4h
+                </td>
+                <td class="apply-col">
+                    <div class="apply-btn-1">
+                        Apply
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <!-- ad in the middle -->
+        <a href="#" class="ad-link">
+            <div class="ad">
+                <div class="ad-image">
+                    <img src="images/ad-pic.avif" alt="ad-pic">
+                </div>
+                <div class="ad-text">
+                    <h2>Unlock your remote career potential with Remote OK Premium</h2>
+                    <p>
+                        Get exclusive access and be the first to apply to
+                        <strong>100,000+ remote jobs</strong> from <strong>10,000+ top companies</strong>  and land your dream remote position!
+                    </p>
+                    <div class="ad-rating">
+                        <div class="ad-rating-star">★★★★★</div>
+                        <div class="ad-rating-text">4.8/5 from 10,000+ reviews</div>
+                    </div>
+                    <div class="ad-btn">
+                        Get instant access
+                    </div>
+                </div>
+            </div>
+        </a>
+        <!-- //ad in the middle -->
+
+        <table class="job-row job3">
+            <tr>
+                <td class="logo">
+                    <img src="images/logo-biz-6.webp" alt="logo-biz-6" width="56">
+                </td>
+                <td class="info">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>
+                                <a href="#" class="title">Talent Acquisition Partner</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sub-title2">vCluster Labs <img src="images/new-gif.webp" alt="new-gif" width="30"></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0;">
+                                <table>
+                                    <tr>
+                                        <td style="padding: 0;">
+                                            <div class="label">
+                                                <span class="label-box">Munich</span>
+                                                <span class="label-box">💰 Upgrade to Premium to see...</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="label-col">
+                    <div class="label2">
+                        <span class="label-box2-2">Consultant</span>
+                        <span class="label-box2-2">Architect</span>
+                        <span class="label-box2-2">Technical</span>
+                    </div>
+                </td>
+                <td class="date2">
+                    3h
+                </td>
+                <td class="apply-col">
+                    <div class="apply-btn-1">
+                        Apply
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table class="job-row job3">
+            <tr>
+                <td class="logo">
+                    <img src="images/logo-biz-5.webp" alt="logo-biz-5" width="56">
+                </td>
+                <td class="info">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>
+                                <a href="#" class="title">Vice President of Engagement Transformation</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sub-title2">Solera Health <img src="images/new-gif.webp" alt="new-gif" width="30"></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0;">
+                                <table>
+                                    <tr>
+                                        <td style="padding: 0;">
+                                            <div class="label">
+                                                <span class="label-box">🌏 Probably Worldwide</span>
+                                                <span class="label-box">💰 Upgrade to Premium to see...</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="label-col">
+                    <div class="label2">
+                        <span class="label-box2-2">Consultant</span>
+                        <span class="label-box2-2">Architect</span>
+                        <span class="label-box2-2">Technical</span>
+                    </div>
+                </td>
+                <td class="date2">
+                    11h
+                </td>
+                <td class="apply-col">
+                    <div class="apply-btn-1">
+                        Apply
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table class="job-row job3">
+            <tr>
+                <td class="logo">
+                    <img src="images/logo-biz-7.webp" alt="logo-biz-7" width="56">
+                </td>
+                <td class="info">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>
+                                <a href="#" class="title">Director AI Engineering</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sub-title2">Lantern <img src="images/new-gif.webp" alt="new-gif" width="30"></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0;">
+                                <table>
+                                    <tr>
+                                        <td style="padding: 0;">
+                                            <div class="label">
+                                                <span class="label-box">USA</span>
+                                                <span class="label-box">💰 Upgrade to Premium to see...</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="label-col">
+                    <div class="label2">
+                        <span class="label-box2-2">Director</span>
+                        <span class="label-box2-2">Content</span>
+                        <span class="label-box2-2">Engineering</span>
+                    </div>
+                </td>
+                <td class="date2">
+                    11h
+                </td>
+                <td class="apply-col">
+                    <div class="apply-btn-1">
+                        Apply
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table class="job-row job3">
+            <tr>
+                <td class="logo">
+                    <img src="images/logo-biz-8.webp" alt="logo-biz-8" width="56">
+                </td>
+                <td class="info">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>
+                                <a href="#" class="title">Full Stack Software Engineer II</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sub-title2">Technergetics <img src="images/new-gif.webp" alt="new-gif" width="30"></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0;">
+                                <table>
+                                    <tr>
+                                        <td style="padding: 0;">
+                                            <div class="label">
+                                                <span class="label-box">💰 Upgrade to Premium to see...</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="label-col">
+                    <div class="label2">
+                        <span class="label-box2-2">Software</span>
+                        <span class="label-box2-2">HR</span>
+                        <span class="label-box2-2">System</span>
+                    </div>
+                </td>
+                <td class="date2">
+                    11h
+                </td>
+                <td class="apply-col">
+                    <div class="apply-btn-1">
+                        Apply
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table class="job-row job3">
+            <tr>
+                <td class="logo">
+                    <img src="images/logo-biz-9.webp" alt="logo-biz-9" width="56">
+                </td>
+                <td class="info">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>
+                                <a href="#" class="title">Senior Product Manager Platform Life Sciences</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sub-title2">SciLeads <img src="images/new-gif.webp" alt="new-gif" width="30"></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0;">
+                                <table>
+                                    <tr>
+                                        <td style="padding: 0;">
+                                            <div class="label">
+                                                <span class="label-box">🌏 Probably Worldwide</span>
+                                                <span class="label-box">💰 Upgrade to Premium to see...</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="label-col">
+                    <div class="label2">
+                        <span class="label-box2-2">Manager</span>
+                        <span class="label-box2-2">Support</span>
+                        <span class="label-box2-2">Leader</span>
+                    </div>
+                </td>
+                <td class="date2">
+                    11h
+                </td>
+                <td class="apply-col">
+                    <div class="apply-btn-1">
+                        Apply
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table class="job-row job3">
+            <tr>
+                <td class="logo">
+                    <img src="images/logo-biz-10.webp" alt="logo-biz-10" width="56">
+                </td>
+                <td class="info">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>
+                                <a href="#" class="title">Customer Success Manager</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sub-title2">GoodTime <img src="images/new-gif.webp" alt="new-gif" width="30"></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0;">
+                                <table>
+                                    <tr>
+                                        <td style="padding: 0;">
+                                            <div class="label">
+                                                <span class="label-box">💰 Upgrade to Premium to see...</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="label-col">
+                    <div class="label2">
+                        <span class="label-box2-2">Manager</span>
+                        <span class="label-box2-2">Support</span>
+                        <span class="label-box2-2">Leader</span>
+                    </div>
+                </td>
+                <td class="date2">
+                    11h
+                </td>
+                <td class="apply-col">
+                    <div class="apply-btn-1">
+                        Apply
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table class="job-row job2 last-row">
+            <tr>
+                <td class="logo" style="width: 85px; padding: 0 7px 0 7px; text-align: center;">
+                    <img src="images/logo-biz-11.webp" alt="logo-biz-4" width="56">
+                </td>
+                <td class="info">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>
+                                <a href="#" class="title">Software engineer </a>
+                                <span>🎈</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sub-title2">Sticker Mule 
+                                <img src="images/hot-gif.webp" alt="hot-gif" width="28">
+                                <img src="images/new-gif.webp" alt="new-gif" width="30">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0;">
+                                <table>
+                                    <tr>
+                                        <td style="padding: 0;">
+                                            <div class="label">
+                                                <span class="label-box">eu Europe</span>
+                                                <span class="label-box">💰 $140k - $150k</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="label-col">
+                    <div class="label2">
+                        <span class="label-box2-2">Engineer</span>
+                        <span class="label-box2-2">Docker</span>
+                        <span class="label-box2-2">Redis</span>
+                    </div>
+                </td>
+                <td class="date2">
+                    <img src="images/paper-clip.svg" alt="clip"> 11h
+                </td>
+                <td class="apply-col">
+                    <div class="apply-btn-1">
+                        Apply
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    
+    <!-- footer -->
+    <div class="footer" id="footer">
+        <p class="footer-text">
+            Get new remote jobs sent to
+        </p>
+        <div class="wrapper">
+            <input type="text" placeholder="Type your email..." class="footer-input">
+            <div class="btn footer-btn">
+                Subscribe
+            </div>
+        </div>
+        <div class="footer-x" id="x-footer">
+            ×
+        </div>
+    </div>
+    <!-- //footer -->
+    <script src="js/script.js" defer></script>
+</body>
+</html>
